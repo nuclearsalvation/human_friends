@@ -1,0 +1,13 @@
+cat > Pets.txt
+cat > PackAnimals.txt
+cat Pets.txt PackAnimals.txt > Animals.txt
+mv Animals.txt HumanFriends.txt
+mkdir Friends
+mv HumanFriends.txt Friends/HumanFriends.txt
+
+sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.32-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
+sudo dpkg -P google-chrome-stable
